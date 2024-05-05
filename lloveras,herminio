@@ -1,0 +1,19 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main(String[] args) {
+        // Get the length and width from the user
+        String lengthString = JOptionPane.showInputDialog(null, "Enter the length of the rectangle:");
+        String widthString = JOptionPane.showInputDialog(null, "Enter the width of the rectangle:");
+
+        // Convert the length and width to double
+        double length = Double.parseDouble(lengthString);
+        double width = Double.parseDouble(widthString);
+
+        // Calculate the area
+        double area = length * width;
+
+        // Display the area
+        JOptionPane.showMessageDialog(null, "The area of the rectangle is " + area);
+    }
+}
